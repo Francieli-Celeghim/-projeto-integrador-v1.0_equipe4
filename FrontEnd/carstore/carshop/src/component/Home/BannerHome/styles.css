@@ -1,0 +1,146 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+section.module.parallax h1{
+  margin-top: 20%;
+  color: #FFF;
+  text-align: center;
+  font-size: 58px;
+  z-index: 50;
+  text-transform: uppercase;
+  font-weight: 900;
+ 
+}
+    
+  section.module.content{
+    padding: 10px 0;
+    background: #FFFF;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+  }
+  
+  
+  
+  section.module.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(80vh);
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -moz-background-size: cover;
+    
+  }
+
+  section.module.parallax:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: -moz-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
+    background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
+    transform: rotate(360deg);
+  }
+
+  @media ( max-width:768px){
+    section.module.parallax{
+        height: 450px;
+    }
+    }
+
+  section.module.parallax-1{
+    background-image: url("../../../assets/carros1.png");
+    background-size: 60%;
+    
+  }
+
+  @media ( max-width:768px){
+    section.module.parallax-1{
+        background-size: 90%;
+    }
+    }
+ 
+  /* section.module.parallax h1{
+    color: rgb(87, 82, 82);
+    text-align: center;
+    font-size: 50px;
+    z-index: 50;
+    text-transform: uppercase;
+  } */
+
+
+  @media (max-width:768px){
+    section.module.parallax h1{
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #banner-container-central {
+  
+    margin-top: 30px;
+    padding: 2rem 2rem;
+    text-align: center;
+}
+
+.banner-conteudo{
+    
+    display: inline-block;
+    justify-content: center;
+    font-size: large;
+    padding: 40px 0;
+    margin-left: 1;
+    vertical-align: middle;
+    max-width:50%;
+    
+}
+
+#banner-imagem{
+    max-width:100%;
+    max-height:100%;
+}
+
+#banner-texto{
+    margin-left: 10px;
+    font-size: 200%;
+} */

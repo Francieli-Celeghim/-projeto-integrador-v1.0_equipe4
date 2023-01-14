@@ -1,0 +1,22 @@
+.item-list-products-body{
+    text-decoration:none;
+    background:#ffffff;
+    height: 100%;
+    padding: 0 30px
+}
+
+.formFilters{
+    margin-left: 5px;
+    margin-bottom: 40px;
+}
+
+.formFiltersH1{
+    padding: 50px;
+    color:rgb(98, 94, 94)
+}
+.select{
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+

@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "8876c884-df36-4d5d-980e-d4dd58a3c635",
+		"name": "0 | Authenticate manual",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18510040"
+	},
+	"item": [
+		{
+			"name": "authenticate",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"eu@mau.com\",\n    \"senha\": \"125669966\"\n} // não criar usuario com o mesmo email\n// autenticação gera um token jwt que deve ser usado no header de autenticação das requests (Bearer token)",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/authenticate",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,348 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "qualificacao": "Econômico",
+      "descricao": "Carros com baixo consumo",
+      "url_imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/2020_Toyota_Yaris_Design_HEV_CVT_1.5_Front.jpg/1024px-2020_Toyota_Yaris_Design_HEV_CVT_1.5_Front.jpg"
+    },
+    {
+      "id": 2,
+      "qualificacao": "Compacto",
+      "descricao": "Carros com tamanho compacto",
+      "url_imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/2016_Smart_Fortwo_Passion_Automatic_1.0_Front.jpg/1024px-2016_Smart_Fortwo_Passion_Automatic_1.0_Front.jpg"
+    },
+    {
+      "id": 3,
+      "qualificacao": "Confort",
+      "descricao": "Carros com amplo espaço interno",
+      "url_imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Citroen_C4_%282020%29_IMG_4202.jpg/1024px-Citroen_C4_%282020%29_IMG_4202.jpg"
+    },
+    {
+      "id": 5,
+      "qualificacao": "Esportivo",
+      "descricao": "Carros esportivos",
+      "url_imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Porsche_911_No_1000000%2C_70_Years_Porsche_Sports_Car%2C_Berlin_%281X7A3888%29.jpg/1024px-Porsche_911_No_1000000%2C_70_Years_Porsche_Sports_Car%2C_Berlin_%281X7A3888%29.jpg"
+    },
+    {
+      "id": 6,
+      "qualificacao": "Hatch",
+      "descricao": "Carros com formato hatch",
+      "url_imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/2018_Honda_Jazz_%28GK5_MY18%29_VTi-S_hatchback_%282018-08-06%29_01.jpg/1024px-2018_Honda_Jazz_%28GK5_MY18%29_VTi-S_hatchback_%282018-08-06%29_01.jpg"
+    },
+    {
+      "id": 7,
+      "qualificacao": "Sedan",
+      "descricao": "Carros com formato sedan",
+      "url_imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/2013-2016_Toyota_Corolla_%28ZRE172R%29_SX_sedan_%282018-09-17%29_01.jpg/1024px-2013-2016_Toyota_Corolla_%28ZRE172R%29_SX_sedan_%282018-09-17%29_01.jpg"
+    }
+  ],
+  "cities": [
+    {
+      "id": 1,
+      "nome": "São Paulo",
+      "estado": "SP"
+    },
+    {
+      "id": 2,
+      "nome": "Rio de Janeiro",
+      "estado": "RJ"
+    },
+    {
+      "id": 3,
+      "nome": "Belo Horizonte",
+      "estado": "MG"
+    },
+    {
+      "id": 4,
+      "nome": "Rio Branco",
+      "estado": "AC"
+    },
+    {
+      "id": 5,
+      "nome": "Maceió",
+      "estado": "AL"
+    },
+    {
+      "id": 6,
+      "nome": "Macapá",
+      "estado": "AP"
+    }
+  ],
+  "productDetails": [
+    {
+      "id": 1,
+      "icon_url": "https://cdn-icons-png.flaticon.com/512/31/31307.png?w=826&t=st=1654304021~exp=1654304621~hmac=72bd496f697f42d72f73f597857f5d4f86dc73889966ea50dcbca3d64ceefe4e",
+      "characteristic": "ABS"
+    },
+    {
+      "id": 2,
+      "icon_url": "https://as1.ftcdn.net/v2/jpg/02/85/01/80/1000_F_285018011_A15VFduXXd6MLgK1l1YOuOfYWgCBhBai.jpg",
+      "characteristic": "Air bag"
+    },
+    {
+      "id": 3,
+      "icon_url": "https://as1.ftcdn.net/v2/jpg/02/90/61/78/1000_F_290617871_Dx0fGopLnJ0uvdIAwWP7oSL1qq1gzkd2.jpg",
+      "characteristic": "Ar-condicionado"
+    },
+    {
+      "id": 4,
+      "icon_url": "https://as2.ftcdn.net/v2/jpg/02/85/01/79/1000_F_285017954_pLWKH1inDn174aiQDuLEZ6OksefUrcNX.jpg",
+      "characteristic": "elétrico"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "url_imagem": "https://storage.googleapis.com/movida-public-images/modelos/3241_image.jpg",
+      "title": "Fiat Argo",
+      "cityId": 1,
+      "categoryId": 1,
+      "qualificacao": "Econômico",
+      "descricao": "Cat ipsum dolor sit amet, curl into a furry donut eat the fat cats food yet eat the rubberband.",
+      "valor_diaria": 100,
+      "caracteristicas": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 3
+        }
+      ],
+      "datas_ocupadas": [
+        {
+          "data": "2022-06-25"
+        },
+        {
+          "data": "2022-06-26"
+        },
+        {
+          "data": "2022-06-27"
+        },
+        {
+          "data": "2022-06-28"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "url_imagem": "https://storage.googleapis.com/movida-public-images/modelos/3239_image.jpg",
+      "title": "Hyndai Creta",
+      "cityId": 1,
+      "categoryId": 1,
+      "qualificacao": "SUV",
+      "descricao": "Cat ipsum dolor sit amet, curl into a furry donut eat the fat cats food yet eat the rubberband.",
+      "valor_diaria": 100,
+      "caracteristicas": [
+        {
+          "id": 1
+        },
+        {
+          "id": 3
+        }
+      ],
+      "datas_ocupadas": [
+        {
+          "data": "2022-06-2022-06-26"
+        },
+        {
+          "data": "2022-06-2022-06-27"
+        },
+        {
+          "data": "2022-06-28"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "url_imagem": "https://storage.googleapis.com/movida-public-images/modelos/3255_image.jpg",
+      "title": "Fiat Onix Joy Plus",
+      "cityId": 2,
+      "categoryId": 2,
+      "qualificacao": "Econômico Sedan",
+      "descricao": "Cat ipsum dolor sit amet, curl into a furry donut eat the fat cats food yet eat the rubberband.",
+      "caracteristicas": [
+        {
+          "id": 2
+        },
+        {
+          "id": 3
+        }
+      ],
+      "valor_diaria": 150,
+      "datas_ocupadas": [
+        {
+          "data": "2022-06-25"
+        },
+        {
+          "data": "2022-06-27"
+        },
+        {
+          "data": "2022-06-28"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "url_imagem": "https://storage.googleapis.com/movida-public-images/modelos/2320_image.png",
+      "title": "Hyundai HB20",
+      "cityId": 3,
+      "categoryId": 3,
+      "qualificacao": "Econômico",
+      "descricao": "Cat ipsum dolor sit amet, curl into a furry donut eat the fat cats food yet eat the rubberband.",
+      "caracteristicas": [
+        {
+          "id": 1
+        }
+      ],
+      "valor_diaria": 100,
+      "datas_ocupadas": [
+        {
+          "data": "2022-06-25"
+        },
+        {
+          "data": "2022-06-26"
+        },
+        {
+          "data": "2022-06-27"
+        }
+      ],
+      "Title": "carro editado",
+      "Category": "economico editado",
+      "Qualificacao": "es muy bonito editado",
+      "Descricao": "compre mais editado"
+    },
+    {
+      "id": 5,
+      "url_imagem": "https://storage.googleapis.com/movida-public-images/modelos/2965_image.jpg",
+      "title": "Peugeot 208",
+      "cityId": 3,
+      "categoryId": 3,
+      "qualificacao": "Compacto",
+      "descricao": "Cat ipsum dolor sit amet, curl into a furry donut eat the fat cats food yet eat the rubberband.",
+      "caracteristicas": [
+        {
+          "id": 1
+        }
+      ],
+      "valor_diaria": 100,
+      "datas_ocupadas": [
+        {
+          "data": "2022-06-25"
+        },
+        {
+          "data": "2022-06-26"
+        },
+        {
+          "data": "2022-06-27"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "url_imagem": "https://storage.googleapis.com/movida-public-images/modelos/2965_image.jpg",
+      "title": "Fiat Cronos",
+      "cityId": 3,
+      "categoryId": 3,
+      "qualificacao": "Sedan Compacto",
+      "descricao": "Cat ipsum dolor sit amet, curl into a furry donut eat the fat cats food yet eat the rubberband.",
+      "caracteristicas": [
+        {
+          "id": 1
+        }
+      ],
+      "valor_diaria": 200,
+      "datas_ocupadas": [
+        {
+          "data": "2022-06-25"
+        },
+        {
+          "data": "2022-06-26"
+        },
+        {
+          "data": "2022-06-27"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "url_imagem": "https://storage.googleapis.com/movida-public-images/modelos/3209_image.png",
+      "title": "Jeep Renegade",
+      "cityId": 3,
+      "categoryId": 3,
+      "qualificacao": "Sedan Automático",
+      "descricao": "Cat ipsum dolor sit amet, curl into a furry donut eat the fat cats food yet eat the rubberband.",
+      "caracteristicas": [
+        {
+          "id": 1
+        }
+      ],
+      "valor_diaria": 200,
+      "datas_ocupadas": [
+        {
+          "data": "2022-06-25"
+        },
+        {
+          "data": "2022-06-26"
+        },
+        {
+          "data": "2022-06-27"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "url_imagem": "https://storage.googleapis.com/movida-public-images/modelos/3230_image.jpg",
+      "title": "Renault Captur",
+      "cityId": 3,
+      "categoryId": 3,
+      "qualificacao": "SUV Automático",
+      "descricao": "Cat ipsum dolor sit amet, curl into a furry donut eat the fat cats food yet eat the rubberband.",
+      "caracteristicas": [
+        {
+          "id": 1
+        }
+      ],
+      "valor_diaria": "200",
+      "datas_ocupadas": [
+        {
+          "data": "2022-06-25"
+        },
+        {
+          "data": "2022-06-26"
+        },
+        {
+          "data": "2022-06-27"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "carro criado e editado",
+      "Category": "categorui criada",
+      "qualificacao": "qualiui criada e ditado",
+      "descricao": "des criada",
+      "valor_diaria": "100",
+      "url_imagem": ""
+    },
+    {
+      "id": 12,
+      "title": "carro",
+      "Category": "econimino",
+      "qualificacao": "dnfksafda",
+      "descricao": "sadfasdfa",
+      "valor_diaria": "500",
+      "url_imagem": ""
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "teste@teste.com",
+      "password": "secret"
+    }
+  ]
+}

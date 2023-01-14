@@ -1,0 +1,170 @@
+{
+	"info": {
+		"_postman_id": "dad970ad-2363-47fa-8188-318e7c146449",
+		"name": "1  | Bookings automatizado",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18510040"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let booking_id = pm.response.json().id;",
+							"pm.environment.set(\"booking_id\", booking_id);",
+							"",
+							"pm.test(\"Status code is 201\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});",
+							"",
+							"pm.test(\"Has id\", function () {",
+							"    pm.expect(typeof booking_id).to.eql(\"number\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJldUBtYXUuY29tIiwiZXhwIjoxNjU3MDY1NjkzLCJpYXQiOjE2NTcwNjIwOTJ9.xCSoIieghpfXhXd92bqfVJmIIcVVuDRSRxOaUYKhsOI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"inicioReserva\": \"2022-02-02\",\n    \"fimReserva\": \"2022-03-10\",\n    \"valorReserva\": 200,\n    \"produto\": {\n        \"id\": 1\n    },\n    \"cidade\": {\n        \"id\": 2\n    },\n    \"usuario\": {\n        \"id\": 1\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/v1/bookings",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"bookings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read By ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let inicioReserva = pm.response.json().inicioReserva;",
+							"",
+							"pm.test(\"Response has status 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"pm.test(\"inicioReserva is 2022-02-02\", function () {",
+							"    pm.expect(inicioReserva).to.eql(\"2022-02-02\");",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/v1/bookings/1",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"bookings",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read By ID (not found)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response has status 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/v1/bookings/2",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"bookings",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

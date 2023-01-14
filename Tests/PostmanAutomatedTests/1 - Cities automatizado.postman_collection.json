@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "97daa25c-9b4f-4b7a-ab29-1bd00d28b90c",
+		"name": "1 | Cities automatizado",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18510040"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// pegando o id de resposta de criação",
+							"let city_id = pm.response.json().id;",
+							"",
+							"// setando variavel de ambiente city_id",
+							"pm.environment.set(\"city_id\", city_id);",
+							"",
+							"// status da requisição de resposta é 201 (criado).",
+							"pm.test(\"Status code is 201\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});",
+							"",
+							"// verificando que o id é um número para confirmar que foi criado.",
+							"pm.test(\"Has id\", function () {",
+							"    pm.expect(typeof city_id).to.eql(\"number\");",
+							"});",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJldUBtYXUuY29tIiwiZXhwIjoxNjU3MDY4NTk1LCJpYXQiOjE2NTcwNjQ5OTV9.gCt7UTa3FLD0byQmOTktgSvHZB1EoK2Echu42cYHrPY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"São Paulo\",\n    \"estado\": \"São Paulo\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/v1/cities",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"cities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read By ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let responseData = pm.response.json();",
+							"let nome = responseData[0].nome;",
+							"",
+							"// status da resposta 200 (ok)",
+							"pm.test(\"Response has status 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"// resposta mais rápida que 200ms",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"// testando que o nome esta correto",
+							"pm.test(\"nome é Curitiba\", function () {",
+							"    pm.expect(nome).to.eql(\"Curitiba\");",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJldUBtYXUuY29tIiwiZXhwIjoxNjU3MDY4NTk1LCJpYXQiOjE2NTcwNjQ5OTV9.gCt7UTa3FLD0byQmOTktgSvHZB1EoK2Echu42cYHrPY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/v1/cities",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"cities"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

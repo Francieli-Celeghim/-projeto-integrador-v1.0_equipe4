@@ -1,0 +1,33 @@
+.carrosselSection {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0px;
+}
+
+.carrosselSectionH2 {
+  padding: 0px;
+  color: black;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#destaques img {
+  border-radius: 10px;
+  cursor: pointer;
+  
+  text-align: center;
+}
+
+#destaques h5 {
+  margin: 4%;
+  
+  text-align: center;
+}
+
+.carrosselSectionDestaques {
+  margin: 5px;
+}

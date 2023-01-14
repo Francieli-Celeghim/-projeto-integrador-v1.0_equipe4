@@ -1,0 +1,27 @@
+.flex-container-calendar{
+    display:flex; 
+   
+    
+}
+
+.calendarElement{
+    justify-content: center;
+    position: absolute;
+    top: 150px;
+    margin-left: -270px;
+    z-index: 50;
+  
+}
+
+.inputBox{
+   width: 200px;
+   height: 30px;
+   border-radius: 5px ;
+   border: none;
+   background-color: #F1C481;
+}
+
+.inputBox:hover{
+    border: none;
+}
+

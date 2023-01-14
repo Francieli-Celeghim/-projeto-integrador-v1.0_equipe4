@@ -1,0 +1,203 @@
+.pesquisa-primeira-fileira {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #daa520;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1230px) {
+  .pesquisa-primeira-fileira {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pesquisa-primeira-fileira {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+@media (max-width: 300px) {
+  .pesquisa-primeira-fileira {
+  }
+}
+
+@media (max-width: 280px) {
+  .pesquisa-primeira-fileira {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+.pesquisa-itens-duplos {
+  display: inline-block;
+  margin: 0px 20px;
+}
+
+@media (max-width: 280px) {
+  .pesquisa-itens-duplos {
+    flex-direction: column;
+    margin: 0px 0px;
+
+    gap: 8px;
+  }
+}
+
+.select-BlocoPesquisa {
+  display: flex;
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #f6a52a;
+  border-width: thin;
+}
+
+.pesquisa-titulo-texto {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .pesquisa-itens-duplos {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+#pesquisa-retirar-data {
+  background-color: #dca417;
+  padding: 10px 70px;
+}
+
+@media (max-width: 280px) {
+  #pesquisa-retirar-data {
+    padding: 5px 40px;
+  }
+}
+
+@media (max-width: 362px) {
+  #pesquisa-retirar-data {
+    padding: 2px 20px;
+  }
+}
+#pesquisa-devolucao-data {
+  background-color: #f1c481;
+  padding: 10px 70px;
+}
+
+@media (max-width: 280px) {
+  #pesquisa-devolucao-data {
+    padding: 5px 40px;
+  }
+}
+
+@media (max-width: 362px) {
+  #pesquisa-devolucao-data {
+    padding: 2px 20px;
+  }
+}
+#pesquisa-retirar-local {
+  background-color: whitesmoke;
+  padding: 10px 70px;
+  border-width: thin;
+}
+@media (max-width: 280px) {
+  #pesquisa-retirar-local {
+    padding: 5px 40px;
+  }
+}
+@media (max-width: 362px) {
+  #pesquisa-retirar-local {
+    padding: 2px 20px;
+  }
+}
+
+#pesquisa-devolucao-checkbox {
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  #pesquisa-devolucao-checkbox {
+    margin-top: 5px;
+  }
+}
+
+.pesquisa-inputs {
+  border-radius: 5px;
+  border-width: thin;
+}
+
+#pesquisa-botao-buscar {
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 5px;
+  font-size: 13pt;
+  background-color: black;
+  color: white;
+  padding: 5px 50px;
+  border-width: thin;
+  cursor: pointer;
+  opacity: 0.8;
+  height: 45px;
+  justify-content: center;
+}
+@media (max-width: 362px) {
+  #pesquisa-botao-buscar {
+    padding: 2px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  #pesquisa-botao-buscar {
+    padding: 5px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  #pesquisa-botao-buscar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+.calendarFrontPage {
+  display: flex;
+  z-index: 50;
+  position: absolute;
+  justify-content: center;
+
+  flex-direction: column;
+}
+
+.dropdown {
+  background-color: white;
+  display: flex;
+  z-index: 50;
+  position: absolute;
+  justify-content: center;
+  padding-right: 20px;
+  padding-left: 20px;
+  flex-direction: column;
+  border: 1px solid gray;
+}
+
+.dropdown:empty {
+  border: none;
+}
+
+.dropdown-row {
+  cursor: pointer;
+  text-align: start;
+  margin: 2px 0;
+}
+
+.inputBox {
+  width: 200px;
+  height: 45px;
+  border-radius: 5px;
+  border-width: thin;
+}

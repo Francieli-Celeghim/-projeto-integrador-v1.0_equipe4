@@ -1,0 +1,48 @@
+{
+	"info": {
+		"_postman_id": "13f3329b-d5de-497a-abe8-c4c4ca33865e",
+		"name": "0 | Images manual",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18510040"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJldUBtYXUuY29tIiwiZXhwIjoxNjU2ODEzMzM3LCJpYXQiOjE2NTY4MDk3Mzd9.Z-06ZjUgJCZhvZq2FGYDvZ4i8ktYSI-xv39QPGnIc1g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\": \"Imagem de teste\",\r\n    \"url\": \"http://pudim.com.br/pudim.jpg\",\r\n    \"produtos\": [{\r\n        \"id\": 1\r\n    }],\r\n    \"categoria\": {\r\n        \"id\": 1\r\n    },\r\n    \"caracteristica\": {\r\n        \"id\": 1\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/api/v1/images",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"images"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

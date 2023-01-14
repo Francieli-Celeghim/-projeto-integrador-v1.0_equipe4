@@ -1,0 +1,134 @@
+.NewProductModal{
+    position: fixed;
+    padding: 10%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;  
+    background-color: rgba(0,0,0,0.5);
+    z-index: 99999;
+    -webkit-transition: opacity 400ms ease-in;
+     -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+   
+   
+}
+
+.container2{
+    background-color: #ffff;
+    background-color: #ffff;
+    color: #000;
+    width: 100%;
+    height:650px;
+    border-radius:5px;
+    margin-top: -15px; 
+}
+
+.close{
+    font-size: 16px;
+    display: flex;
+    background-color: transparent;
+    outline: none;   
+    right: calc(-100% + 40px);
+    top: 29px;
+    cursor: pointer;
+    position: relative;
+    align-items: center;
+    
+}
+
+.close::before, .close::after{
+    content: '';
+    position: absolute;
+    width: 2.5px;
+    height: 24px;
+    background-color: #000;
+}
+
+::after{
+    transform: rotate(90deg);
+}
+
+::before{
+    transform: rotate(0);
+}
+.flex-container{
+    display: flex;
+    width: 100%;
+    margin-left: 25px;
+    margin-top: 15px;
+   
+    }
+
+
+
+    .modalItem{
+        padding: 5px;
+        display: flex;
+        align-items: center;
+    }
+
+
+   
+
+    .flex-child-resto{
+        display: flex;
+        flex-direction: column;
+        
+        width: 60%;
+        margin-left: 10px;
+        
+    }
+
+    .modal-imagem{
+    width: 80%;
+    height: 60%;
+    margin-top: 25px;
+    text-align: center;
+    }
+
+    .modal-descricao{
+        display: flex;
+        text-align: justify;
+      margin-bottom: 2px;
+    }
+
+    .listaAtributosBox{
+        display: flex;
+        flex-direction: column;
+        line-height:100%;
+
+    }
+
+   
+    .modal-bloco-valorDiaria-botao-imagem{
+        width: 50%;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        margin-top: 25px;
+        padding: 25px;
+    }
+
+    
+
+    .ButtonModal{
+        background: #F6A52A;
+        border: none;
+        color: black;
+        padding: 0px 0px;
+        text-align:center;
+        font-size:18px;
+        border-radius:3px;
+        width:320px;
+        height: 60px;
+        margin-top: 0;
+        margin-left: 20%;
+   
+    }
+
+    .ButtonModal:hover{
+        background: #ee9207;
+    }
